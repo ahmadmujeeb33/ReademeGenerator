@@ -59,7 +59,7 @@ inquirer
 
     .then((data) => {
         let allData = markdown.generateReadme(data);
-        fs.writeFile('README.md', allData, function (err) {
+        fs.writeFile('GeneratedReadme.md', allData, function (err) {
             if (err) throw err;
             console.log('Saved!');
           });
