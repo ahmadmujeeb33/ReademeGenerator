@@ -17,9 +17,11 @@ function generateLicense(license){
     }
 }
 function generateReadme(response){
-return `#${response.projectName}
+return `
 
-# devops
+## ${response.projectName}
+
+
 
 ![Github-liscense]
     ${generateLicense(response.license)}
