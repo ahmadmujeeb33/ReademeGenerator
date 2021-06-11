@@ -34,8 +34,8 @@ return `#${response.projectName}
     - [Usage](#Usage)
     - [License](#License)
     - [Contributing](#Contributing)
-    - [Tests](#tests)
-    - [Questions](#questions) 
+    - [Tests](#Tests)
+    - [Questions](#Questions) 
 
 ## Installation
 
