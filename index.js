@@ -1,5 +1,6 @@
 const inquirer = require('inquirer');
 const fs = require('fs');
+const markdown = require('./generate_markdown');
 
 inquirer
     .prompt([
@@ -26,6 +27,11 @@ inquirer
         },
         {
             type:'input',
+            message:'Please write a short discription of the project?',
+            name:'discription',
+        },
+        {
+            type:'input',
             message:'Whas command should be run to install dependencies',
             name:'command',
         },
@@ -46,4 +52,17 @@ inquirer
         },
 
 
+
+
     ])
+
+
+    .then((data) => {
+        let allData = markdown.generateReadme(data);
+        fs.writeFile('index.html', allData, function (err) {
+            if (err) throw err;
+            console.log('Saved!');
+          });
+       
+      });
+    
