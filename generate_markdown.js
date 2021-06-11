@@ -32,8 +32,10 @@ return `#${response.projectName}
 ## Table of Contents
     - [Installation](#Installation)
     - [Usage](#Usage)
-    - [Credits](#Credits)
-    - [License](#devops)
+    - [License](#License)
+    - [Contributing](#Contributing)
+    - [Tests](#tests)
+    - [Questions](#questions) 
 
 ## Installation
 
@@ -42,6 +44,10 @@ return `#${response.projectName}
 ## Usage
 
     ${response.infoAboutRepo}
+
+## License
+​
+    This project is licensed under the ${response.license} license.
 
 ## Contributing
     ${response.infoAboutContributing}
